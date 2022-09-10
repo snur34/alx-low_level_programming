@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  *main - print numbers from 00 to 99.
  *
@@ -24,10 +23,10 @@ int main(void)
 			}
 			j++;
 		}
-		if (j >= 9)
+		if (j >= '9')
 		{
 			j = '0';								}
-			i++;
+		i++;
 	}
 	return (0);
 }
