@@ -1,17 +1,13 @@
 /**
- *_puts - prints a string in stdout
- *@str: string to print
- *
- *Return: void
+ *_puts - prints a string, followed by a new line.
+ *@str: input string to print.
  */
 void _puts(char *str)
 {
-		int i = 0;
-
-		while (*(str + i) != '\0')
+		while (*str != '\0')
 		{
-			putchar(*(str + i));
-			i++;
+			_putchar(*str);
+			str++;
 		}
-		putchar(10);
+		_putchar('\n');
 }
